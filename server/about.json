@@ -1,0 +1,214 @@
+{
+  "client": {
+    "host": "10.101.53.35"
+  },
+  "server": {
+    "current_time": 1699100304,
+    "services": [
+      {
+        "name": "coinmarket",
+        "actions": [
+          {
+            "title": "Get Crypto Price",
+            "name": "get_crypto_price",
+            "description": "Sends the amount of a specific cryptocurrency at a precise time.",
+            "parameters_descrption": [
+              {"name": "crypto name"}
+            ]
+          },
+          {
+            "title": "Check Crypto Price",
+            "name": "check_crypto_price",
+            "description": "Notifies when a defined amount of a cryptocurrency is exceeded.",
+            "parameters_descrption": [
+              {"name": "crypto name"},
+              {"name": "price limit"}
+            ]
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "name": "weathermap",
+        "actions": [
+          {
+            "title": "Get Weather City",
+            "name": "get_weather_city",
+            "description": "Provides weather information for a given city.",
+            "parameters_descrption": [
+              {"name": "city"}
+            ]
+          },
+          {
+            "title": "Check Weather City",
+            "name": "check_weather_city",
+            "description": "Checks if specific weather conditions are occurring.",
+            "parameters_descrption": [
+              {"name": "city"},
+              {"name": "weather"}
+            ]
+          },
+          {
+            "title": "Check Temperature City",
+            "name": "check_temperature_city",
+            "description": "Notifies when a defined temperature is exceeded.",
+            "parameters_descrption": [
+              {"name": "city"},
+              {"name": "weather"}
+            ]
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "name": "wordnet",
+        "actions": [
+          {
+            "title": "Get Random Word",
+            "name": "get_random_word",
+            "description": "Generates a random word each day and provides information about it.",
+            "parameters_descrption": []
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "name": "googlenews",
+        "actions": [
+          {
+            "title": "Get Articles",
+            "name": "get_articles",
+            "description": "Finds an article each day based on a given word.",
+            "parameters_descrption": [
+              {"name": "keyword"}
+            ]
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "name": "googleMeteo",
+        "actions": [
+          {
+            "title": "Get Wind and Humidity",
+            "name": "get_wind_and_humidity",
+            "description": "Get wind and humidity informations.",
+            "parameters_descrption": [
+              {"name": "city"}
+            ]
+          },
+          {
+            "title": "Check Wind speed",
+            "name": "check_wind_speed",
+            "description": "Check if wind speed doesn't exceed.",
+            "parameters_descrption": [
+              {"name": "city"},
+              {"name": "wind speed"}
+            ]
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "name": "NBA",
+        "actions": [
+          {
+            "title": "Get NBA Data",
+            "name": "get_NBA_Data",
+            "description": "Finds NBA live data.",
+            "parameters_descrption": []
+          },
+          {
+            "title": "Check NBA Standings",
+            "name": "Check_NBA_Standings",
+            "description": "Check if NBA score has changed.",
+            "parameters_descrption": []
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "name": "Github",
+        "actions": [
+          {
+            "title": "Get push",
+            "name": "get_push",
+            "description": "Get notified when someone pushes on a project.",
+            "parameters_descrption": [
+              {"name": "token"},
+              {"name": "owner"},
+              {"name": "repository"}
+            ]
+          }
+        ],
+        "reactions": [
+          {
+              "title": "Create GitHub Issue",
+              "name": "create_github_issue",
+              "description": "Create a new GitHub issue in a repository.",
+              "parameters_descrption": [
+                  {"name": "access_token"},
+                  {"name": "owner"},
+                  {"name": "repository"},
+                  {"name": "title"},
+                  {"name": "body"}
+              ]
+          },
+          {
+              "title": "Create GitHub Gist",
+              "name": "create_github_gist",
+              "description": "Create a GitHub Gist with the provided content.",
+              "parameters_descrption": [
+                  {"name": "access_token"},
+                  {"name": "description"},
+                  {"name": "filename"},
+                  {"name": "content"}
+              ]
+          }
+        ]
+      },
+      {
+        "name": "PyPopulation",
+        "actions": [
+          {
+            "title": "Get population by country",
+            "name": "get_population_by_country",
+            "description": "Get an estimated population for each country.",
+            "parameters_descrption": [
+              {"name": "Country abbreviation"}
+            ]
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "name": "transport-co2",
+        "actions": [
+          {
+            "title": "Get CO2 Emission",
+            "name": "get_co2_emission",
+            "description": "Get CO2 emissions for a given transport trip.",
+            "parameters_descrption": [
+              {"name": "vehicle"},
+              {"name": "distance"},
+              {"name": "occupancy"}
+            ]
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "name": "Ephem",
+        "actions": [
+          {
+            "title": "Get Lunar Phase",
+            "name": "get_lunar_phase",
+            "description": "Get today lunar phase.",
+            "parameters_descrption": []
+          }
+        ],
+        "reactions": []
+      }
+    ]
+  }
+}

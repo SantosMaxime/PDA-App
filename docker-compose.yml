@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  web_client:
+    build:
+      context: .
+      dockerfile: web_client/Dockerfile
+    ports:
+      - "8081:3000"
+    volumes:
+      - shared_volume:/shared_data
+    #server:
+      #build:
+      #context: .
+      #dockerfile: ./application_server/Dockerfile
+      #ports:
+      #- "8080:5000"
+      #volumes:
+      #- ./application_server:/app
+
+volumes:
+  shared_volume:
