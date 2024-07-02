@@ -1,0 +1,44 @@
+.UserTable-page {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.table-loading {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    height: 85vh;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+.name-text-field {
+    width: 10%;
+}
+
+.email-text-field {
+    width: 20%;
+}
+
+.form-container {
+    height: 7vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 40px;
+}
+
+

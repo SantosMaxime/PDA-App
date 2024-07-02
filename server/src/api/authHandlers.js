@@ -7,6 +7,13 @@ const { addToken, validateToken } = require("./tokenStorage");
 exports.loginUser = async (req, res) => {
     const { email, password, token } = req.body;
 
+    if (req.session.isAuthenticated) {
+        return res.json({
+            message: "Already authenticated",
+            token: req.cookies.accessToken,
+        });
+    }
+
     if (token) {
         if (!validateToken(token)) {
             return res.status(401).json({

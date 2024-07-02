@@ -1,0 +1,52 @@
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    /*background-color: #fbfcfe;*/
+    background-color: #4261a1;
+}
+
+.loginPage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #ffffff; /* Fallback color */
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    50% {
+        text-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #e60073, 0 0 80px #e60073, 0 0 100px #e60073, 0 0 120px #e60073, 0 0 140px #e60073;
+    }
+}
+
+.glowing-text {
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+.loginPage-container2 {
+    /*height: 100vh;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*background-color: #fbfcfe;*/
+    /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);*/
+}
+
+.loginPage-form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}

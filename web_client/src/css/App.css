@@ -1,0 +1,114 @@
+.App {
+    text-align: center;
+    background-color: #fbfcfe;
+}
+
+.App-header {
+    background-color: #282c34;
+}
+
+.Main-container {
+    height: 92vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    font-size: calc(10px + 2vmin);
+}
+
+.Left-container-header {
+    height: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+
+}
+
+.Left-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: calc(10px + 2vmin);
+}
+
+.Left-container-expanded {
+    width: 60%; /* Adjust as needed */
+    transition: width 0.5s ease-in-out; /* Adjust duration and easing function as needed */
+}
+
+.Left-container-expanded {
+    width: 60%; /* Adjust as needed */
+    transition: width 0.5s ease-in-out; /* Adjust duration and easing function as needed */
+}
+
+.Left-paper {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    overflow: hidden;
+}
+
+.Right-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    overflow: hidden;
+}
+
+.Right-paper {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.Right-paper-details {
+    height: 90%;
+    width: 95%;
+}
+
+.Login-Typography {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*background-color: rgb(255, 255, 255);*/
+    /*border-radius: 10px;*/
+    /*border: 1px solid #b0b0b0;*/
+    padding: 5px 15px 5px 15px;
+}
+
+.no-scrollbars{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    scrollbar-color: transparent transparent;
+
+    &::-webkit-scrollbar {
+        width: 1px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+}
+
+.no-scrollbars::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
